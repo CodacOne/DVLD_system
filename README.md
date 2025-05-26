@@ -1,113 +1,79 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DVLD - نظام إدارة وإصدار رخص السائقين</title>
+<title>نظام إدارة رخص السائقين (DVLD)</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
     color: #222;
-  }
-  h1, h2, h3 {
-    color: #2c3e50;
-    margin-bottom: 10px;
+    padding: 20px;
   }
   h1 {
-    font-size: 2.2em;
+    color: #2c3e50;
     margin-bottom: 20px;
   }
+  h2 {
+    color: #34495e;
+    margin-top: 30px;
+  }
+  p, ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
   ul {
-    margin: 0 0 15px 20px;
-    padding-left: 0;
+    margin: 10px 0 20px 20px;
   }
   li {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
-  p {
-    margin: 12px 0;
+  .car-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
   }
-  .en-text {
-    display: block;
-    direction: ltr;
-    font-style: italic;
-    color: #555;
-    margin: 4px 0 0 20px;
-    border-left: 3px solid #ccc;
-    padding-left: 8px;
+  .car-icons img {
+    width: 80px;
+    height: auto;
   }
   footer {
     margin-top: 40px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    font-size: 0.9em;
-    color: #888;
     text-align: center;
+    color: #888;
+    font-size: 0.9em;
   }
 </style>
 </head>
 <body>
 
 <h1>🚗 نظام إدارة وإصدار رخص السائقين (DVLD)</h1>
-<p><strong>نظام تدريبي لإدارة رخص السائقين</strong> تم تطويره باستخدام <code>C#</code> و<code>Windows Forms</code> مع قاعدة بيانات <code>SQL Server</code> ضمن بنية <strong>3-Tier Architecture</strong>.</p>
-<p class="en-text"><strong>Training system for Driving License Management</strong> developed with <code>C#</code>, <code>Windows Forms</code>, and <code>SQL Server</code> following a <strong>3-Tier Architecture</strong>.</p>
+
+<p>نظام تدريبي لإدارة رخص السائقين تم تطويره باستخدام لغة C# وWindows Forms مع قاعدة بيانات SQL Server ضمن بنية 3-Tier Architecture.</p>
 
 <h2>📋 نظرة عامة</h2>
-<p>يهدف النظام إلى إدارة جميع عمليات إصدار وتجديد واستبدال رخص القيادة مع الالتزام بالشروط الخاصة بكل فئة رخصة.</p>
-<p class="en-text">The system manages all processes related to issuing, renewing, and replacing driving licenses while enforcing category-specific requirements.</p>
+<p>يهدف هذا النظام إلى إدارة عمليات إصدار وتجديد واستبدال رخص القيادة بجميع أنواعها وفقًا لمجموعة من الشروط والمتطلبات المحددة لكل فئة.</p>
 
-<h2>🧾 الخدمات الرئيسية:</h2>
+<h2>🧾 الخدمات الرئيسية المقدمة:</h2>
 <ul>
-  <li>
-    إصدار رخصة قيادة لأول مرة
-    <span class="en-text">Issuance of a new driving license</span>
-  </li>
-  <li>
-    إعادة الفحص
-    <span class="en-text">Re-examination</span>
-  </li>
-  <li>
-    تجديد رخصة القيادة
-    <span class="en-text">License renewal</span>
-  </li>
-  <li>
-    إصدار بدل رخصة مفقودة أو تالفة
-    <span class="en-text">Issuance of replacement for lost or damaged licenses</span>
-  </li>
-  <li>
-    فك حجز الرخصة
-    <span class="en-text">Release of license detention</span>
-  </li>
-  <li>
-    إصدار رخصة دولية
-    <span class="en-text">Issuance of international driving license</span>
-  </li>
+  <li>إصدار رخصة لأول مرة</li>
+  <li>إعادة فحص</li>
+  <li>تجديد رخص القيادة</li>
+  <li>إصدار بدل رخصة مفقودة أو تالفة</li>
+  <li>فك حجز رخصة قيادة</li>
+  <li>إصدار رخصة دولية</li>
 </ul>
 
-<h2>💲 الرسوم</h2>
-<ul>
-  <li>
-    رسوم تقديم الخدمة: 5 دولارات لكل خدمة
-    <span class="en-text">Service fee: $5 per service</span>
-  </li>
-  <li>
-    رسوم الفحوصات: تختلف حسب نوع الفحص والفئة
-    <span class="en-text">Examination fees vary by type and license category</span>
-  </li>
-  <li>
-    رسوم الرخص: تعتمد على فئة الرخصة المطلوبة
-    <span class="en-text">License fees depend on the requested license category</span>
-  </li>
-</ul>
+<div class="car-icons">
+  <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="سيارة صغيرة" title="سيارة صغيرة" />
+  <img src="https://cdn-icons-png.flaticon.com/512/743/743132.png" alt="سيارة أجرة" title="سيارة أجرة" />
+  <img src="https://cdn-icons-png.flaticon.com/512/743/743124.png" alt="دراجة نارية" title="دراجة نارية" />
+  <img src="https://cdn-icons-png.flaticon.com/512/743/743141.png" alt="شاحنة" title="شاحنة" />
+</div>
 
-<footer>
-  <hr />
-  <p>© 2023 - ProgrammingAdvices.com</p>
-</footer>
+<footer>© 2025 - جميع الحقوق محفوظة</footer>
 
 </body>
 </html>
-
