@@ -1,79 +1,60 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>نظام إدارة رخص السائقين (DVLD)</title>
-<style>
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f4f8;
-    color: #222;
-    padding: 20px;
-  }
-  h1 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-  }
-  h2 {
-    color: #34495e;
-    margin-top: 30px;
-  }
-  p, ul {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-  ul {
-    margin: 10px 0 20px 20px;
-  }
-  li {
-    margin-bottom: 8px;
-  }
-  .car-icons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-  }
-  .car-icons img {
-    width: 80px;
-    height: auto;
-  }
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #888;
-    font-size: 0.9em;
-  }
-</style>
+    <meta charset="UTF-8" />
+    <title>README - مشروع إدارة رخص القيادة DVLD</title>
 </head>
 <body>
+    <h2>⚠️ هذا الملف يحتوي على شرح باللغتين العربية والإنجليزية | This file contains both Arabic and English descriptions</h2>
 
-<h1>🚗 نظام إدارة وإصدار رخص السائقين (DVLD)</h1>
+    <!-- الشرح بالعربية -->
+    <h3>📌 مشروع DVLD: نظام إدارة رخص القيادة</h3>
+    <p>هذا مشروع تدريبي شخصي قمت بتطويره بالكامل، يحاكي نظام إدارة دائرة ترخيص السواقين والمركبات (DVLD). يتضمن إصدار وتجديد واستبدال الرخص، بالإضافة إلى اختبارات القيادة وإدارة المستخدمين.</p>
+    <h4>التقنيات المستخدمة:</h4>
+    <ul>
+        <li>C# - Windows Forms</li>
+        <li>SQL Server</li>
+        <li>3-Tier Architecture</li>
+    </ul>
+    <h4>المزايا الرئيسية:</h4>
+    <ul>
+        <li>إصدار رخص لأول مرة وتحديد فئتها حسب العمر</li>
+        <li>اختبارات نظر، نظري، وعملي مع تسجيل النتائج</li>
+        <li>خدمة تجديد واستبدال الرخص (فاقد / تالف)</li>
+        <li>خدمة إصدار رخص دولية</li>
+        <li>إدارة المستخدمين، الأشخاص، الطلبات، وفئات الرخص</li>
+    </ul>
+    <h4>كيفية التشغيل:</h4>
+    <ol>
+        <li>افتح المشروع ببرنامج Visual Studio</li>
+        <li>قم بإعداد الاتصال بقاعدة البيانات وتحديث بيانات المستخدم</li>
+        <li>ابدأ بتشغيل المشروع والتفاعل مع الواجهات</li>
+    </ol>
 
-<p>نظام تدريبي لإدارة رخص السائقين تم تطويره باستخدام لغة C# وWindows Forms مع قاعدة بيانات SQL Server ضمن بنية 3-Tier Architecture.</p>
+    <hr />
 
-<h2>📋 نظرة عامة</h2>
-<p>يهدف هذا النظام إلى إدارة عمليات إصدار وتجديد واستبدال رخص القيادة بجميع أنواعها وفقًا لمجموعة من الشروط والمتطلبات المحددة لكل فئة.</p>
-
-<h2>🧾 الخدمات الرئيسية المقدمة:</h2>
-<ul>
-  <li>إصدار رخصة لأول مرة</li>
-  <li>إعادة فحص</li>
-  <li>تجديد رخص القيادة</li>
-  <li>إصدار بدل رخصة مفقودة أو تالفة</li>
-  <li>فك حجز رخصة قيادة</li>
-  <li>إصدار رخصة دولية</li>
-</ul>
-
-<div class="car-icons">
-  <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="سيارة صغيرة" title="سيارة صغيرة" />
-  <img src="https://cdn-icons-png.flaticon.com/512/743/743132.png" alt="سيارة أجرة" title="سيارة أجرة" />
-  <img src="https://cdn-icons-png.flaticon.com/512/743/743124.png" alt="دراجة نارية" title="دراجة نارية" />
-  <img src="https://cdn-icons-png.flaticon.com/512/743/743141.png" alt="شاحنة" title="شاحنة" />
-</div>
-
-<footer>© 2025 - جميع الحقوق محفوظة</footer>
-
+    <!-- الشرح بالإنجليزية -->
+    <h3>📌 DVLD Project: Driving License Management System</h3>
+    <p>This is a personal training project I fully developed, simulating the DVLD (Driving & Vehicle License Department) system. It includes issuing, renewing, and replacing licenses, as well as managing driving tests and users.</p>
+    <h4>Technologies Used:</h4>
+    <ul>
+        <li>C# - Windows Forms</li>
+        <li>SQL Server</li>
+        <li>3-Tier Architecture</li>
+    </ul>
+    <h4>Key Features:</h4>
+    <ul>
+        <li>Issue new licenses based on age and class</li>
+        <li>Eye, theory, and practical tests with result tracking</li>
+        <li>Renew or replace lost/damaged licenses</li>
+        <li>Issue international licenses</li>
+        <li>Manage users, persons, applications, and license classes</li>
+    </ul>
+    <h4>How to Run:</h4>
+    <ol>
+        <li>Open the project in Visual Studio</li>
+        <li>Configure the database connection and update user credentials</li>
+        <li>Run the application and interact with the forms</li>
+    </ol>
 </body>
 </html>
